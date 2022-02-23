@@ -65,6 +65,7 @@ def f1(a,b,c=0,*args,**kw):
 # L2 = list(map(normalize, L1))
 # print(L2)
 
+<<<<<<< HEAD
 # import os
 # def return_filelist(path):
 #     return [x for x in os.listdir(path) if os.path.isfile(x)]
@@ -145,3 +146,28 @@ def f1(a,b,c=0,*args,**kw):
 # # 把接收的数据写入文件:
 # with open('sina.html', 'wb') as f:
 #     f.write(html)
+
+# import os
+# def return_filelist(path):
+#     return [x for x in os.listdir(path) if os.path.isfile(x)]
+
+# def print_path(L1,s):
+#     for file in L1:
+#         if file.find(s)!=-1:
+#             print(file)
+#         else:
+#             continue
+
+
+# pwd=os.getcwd()
+# print(pwd)
+# s=input("请输入需要查找的文件名：")
+
+# L1=return_filelist(os.getcwd())
+# print_path(L1,s)
+# for i in os.listdir(pwd):
+#     if os.path.isdir(i):
+#         print(i)
+#         L2=return_filelist(pwd+"\\"+i)
+#         print_path(L2,s)
+
