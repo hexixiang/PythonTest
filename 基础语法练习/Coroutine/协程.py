@@ -5,15 +5,14 @@ def consumer():
         if not n:
             return
         print('[CONSUMER] Consuming %s...' % n)
-        r = '200 OK'
-
+        r='200 OK'
 def produce(c):
     c.send(None)#和yield搭配使用
     n = 0
     while n < 5:
         n = n + 1
         print('[PRODUCER] Producing %s...' % n)
-        r = c.send(n)
+        r = c.send(n)#发送给r后
         print('[PRODUCER] Consumer return: %s' % r)
     c.close()
 
